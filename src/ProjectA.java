@@ -5,19 +5,19 @@ public class ProjectA {
 	Double salary;
 	Double sales;
 
-	public ProjectA(String insert, String name , Double salary ,Double sale ) {
+	public ProjectA(String insert, String name , Double salary ,Double sales ) {
 		// TODO Auto-generated constructor stub
 		
 		this.id=insert;
 		this.name=name;
 		this.salary=salary;
 		this.sales=sales;
-		 if(sale<=25000) { 
+		 if(sales<=50000) { 
 			 
 			 this.sales=sales*(0.01);
 			 this.salary =  this.salary + this.sales;
 		        
-		 }else if(sales>=25001 && sales<=50000) {
+		 }else if(sales>=50001 && sales<=100000) {
 
 			 this.sales=sales*(0.02);
 			 this.salary =  this.salary+this.sales;		        
